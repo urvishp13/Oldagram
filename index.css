@@ -3,3 +3,25 @@ html, body {
     padding: 0;
 }
 
+/* -------------- HEADER -------------- */
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.logo {
+    width: 7.9375em;
+}
+
+.avatar {
+    width: 2.125em;
+    height: 2.125em;
+    border-radius: 50%;
+}
+
+/* --------- UTILITY CLASSES ---------- */
+.flex {
+    display: flex;
+}
+
