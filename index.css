@@ -59,6 +59,11 @@ header {
     font-size: .75rem;
 }
 
+/* -------------- POST ---------------- */
+.post {
+    width: 100%;
+}
+
 /* --------- UTILITY CLASSES ---------- */
 .flex {
     display: flex;
