@@ -1,9 +1,45 @@
+<!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <img src="images/logo.png">
-        <script src="index.js"></script>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="Oldagram logo">
+        <img src="images/user-avatar.png" alt="user avatar" class="avatar">
+    </header>
+    <main>
+        <section class="poster-info flex">
+            <!-- image of poster -->
+            <img src="images/avatar-vangogh.jpg" alt="Van Gogh's avatar" class="avatar">
+            <!-- name of poster -->
+            <p class="poster-name">Vincent Van Gogh</p>
+            <!-- place of origin of poster -->
+            <p>Zudert, Netherlands</p>
+        </section>
+        <section class="post-content">
+            <!-- post -->
+            <img src="images/post-vangogh.jpg" alt="self-portrait of Van Gogh" class="post">
+        </section>
+        <section class="post-interactions icons flex">
+            <!-- like icon -->
+            <button><img src="images/icon-heart.png" alt="heart icon" class="icon"></button>
+            <!-- comment icon -->
+            <button><img src="images/icon-comment.png" alt="comment icon" class="icon"></button>
+            <!-- DM icon -->
+            <button><img src="images/icon-dm.png" alt="direct message icon" class="icon"></button>
+        </section>
+        <section class="post-details">
+            <p class="likes">21,492 likes</p>
+            <div class="comment">
+                <p><span class="username">vincey1853</span> <span class="text">just took a few mushrooms lol</span></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
