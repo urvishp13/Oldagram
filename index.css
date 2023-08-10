@@ -64,6 +64,19 @@ header {
     width: 100%;
 }
 
+/* ------------- ICONS ---------------- */
+.post-interactions {
+    padding: 1.31em 0 0 .62em;
+}
+
+.icons {
+    gap: .65em;
+}
+
+.icon {
+    width: 1.7em;
+}
+
 /* --------- UTILITY CLASSES ---------- */
 .flex {
     display: flex;
