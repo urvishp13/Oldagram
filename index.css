@@ -77,6 +77,16 @@ header {
     width: 1.7em;
 }
 
+/* ----------- POST DETAILS ----------- */
+.post-details {
+    font-size: .8125rem;
+    padding-left: .62em;
+}
+
+.likes, .username {
+    font-weight: bold;
+}
+
 /* --------- UTILITY CLASSES ---------- */
 .flex {
     display: flex;
