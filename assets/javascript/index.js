@@ -25,7 +25,7 @@ function getPosterInfo(name, avatar, location) {
     const html = `
                 <img 
                     src="assets/${avatar}" 
-                    alt="self-portrait of ${name}"
+                    alt="picture of ${name}"
                     class="avatar">
                 `
 
