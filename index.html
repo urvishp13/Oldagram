@@ -11,34 +11,36 @@
             <img src="assets/images/user-avatar.png" alt="user avatar" class="avatar">
     </header>
     <main>
-        <section class="poster-info flex">
-            <!-- image of poster -->
-            <img class="avatar" src="assets/images/avatar-vangogh.jpg" alt="self-portrait of Van Gogh">
-            <div class="flex">
-                <!-- name of poster -->
-                <p class="poster-name">Vincent Van Gogh</p>
-                <!-- place of origin of poster -->
-                <p class="poster-residence">Zudert, Netherlands</p>
-            </div>                
-        </section>
-        <section class="post">
-            <!-- post -->
-            <img src="assets/images/post-vangogh.jpg" alt="self-portrait of Van Gogh" class="post">
-        </section>
-        <section class="post-interactions icons flex">
-            <!-- like icon -->
-            <img src="assets/images/icon-heart.png" alt="heart icon" class="icon">
-            <!-- comment icon -->
-            <img src="assets/images/icon-comment.png" alt="comment icon" class="icon">
-            <!-- DM icon -->
-            <img src="assets/images/icon-dm.png" alt="direct message icon" class="icon">
-        </section>
-        <section class="post-details">
-            <p class="likes">21,492 likes</p>
-            <div class="comment">
-                <p><span class="username">vincey1853</span> <span class="text">just took a few mushrooms lol</span></p>
-            </div>
-        </section>
+        <div id="post-layout">
+            <section class="poster-info flex">
+                <!-- image of poster -->
+                <div class="avatar"></div>
+                <div class="flex">
+                    <!-- name of poster -->
+                    <p class="poster-name"></p>
+                    <!-- place of origin of poster -->
+                    <p class="poster-location"></p>
+                </div>                
+            </section>
+            <section class="post">
+                <!-- post -->
+                <img src="assets/images/post-vangogh.jpg" alt="self-portrait of Van Gogh" class="post">
+            </section>
+            <section class="post-interactions icons flex">
+                <!-- like icon -->
+                <img src="assets/images/icon-heart.png" alt="heart icon" class="icon">
+                <!-- comment icon -->
+                <img src="assets/images/icon-comment.png" alt="comment icon" class="icon">
+                <!-- DM icon -->
+                <img src="assets/images/icon-dm.png" alt="direct message icon" class="icon">
+            </section>
+            <section class="post-details">
+                <p class="likes">21,492 likes</p>
+                <div class="comment">
+                    <p><span class="username">vincey1853</span> <span class="text">just took a few mushrooms lol</span></p>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="assets/javascript/index.js" type="module"></script>
