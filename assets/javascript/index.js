@@ -4,11 +4,11 @@ let main = document.getElementsByTagName("main")[0]
 const postLayout = document.getElementsByClassName("post-layout")[0]
 
 // grab the sections from the DOM
-const postEl = document.getElementsByClassName("post")[0]
-const postDetails = document.getElementsByClassName("post-details")[0]
+const posterInfo = postLayout.getElementsByClassName("poster-info")[0]
+const postEl = postLayout.getElementsByClassName("post")[0]
+const postDetails = postLayout.getElementsByClassName("post-details")[0]
 
-const posterInfo = document.getElementsByClassName("poster-info")[0]
-
+let html = ""
 // write the posts to the DOM
 for (const obj of posts) {
 
@@ -18,8 +18,10 @@ for (const obj of posts) {
     getPost(post, name)
     getPostDetails(likes, username, comment)
 
-    main.innerHTML += postLayout.outerHTML
+    html += postLayout.outerHTML
 }
+
+main.innerHTML = html
 
 function getPosterInfo(name, avatar, location) {
     const avatarEl = posterInfo.getElementsByClassName("avatar")[0]
