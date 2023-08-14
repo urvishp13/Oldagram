@@ -1,12 +1,10 @@
 import { posts } from "./posts.js"
 
-// get original post layout element
-// make a copy of the original post layout
-    // make changes here
-// add the copy to the DOM
-
 let main = document.getElementsByTagName("main")[0]
 const postLayout = document.getElementById("post-layout")
+const postEl = document.getElementsByClassName("post")[0]
+
+console.log(postEl)
 
 const posterInfo = document.getElementsByClassName("poster-info")[0]
 
@@ -15,6 +13,9 @@ for (const obj of posts) {
     const { name, username, location, avatar, post, comment, likes } = obj
 
     getPosterInfo(name, avatar, location)
+    getPost(post, name)
+
+    main.innerHTML += postLayout.outerHTML
 }
 
 function getPosterInfo(name, avatar, location) {
@@ -32,6 +33,14 @@ function getPosterInfo(name, avatar, location) {
     avatarEl.innerHTML = html
     nameEl.textContent = `${name}`
     locationEl.textContent = `${location}`
+}
 
-    main.innerHTML += postLayout.outerHTML
+function getPost(post, name) {
+    postEl.innerHTML = `
+                    <img 
+                         src="assets/${post}" 
+                         alt="self-portrait of ${name}" 
+                         class="post"
+                         >
+                    `
 }
