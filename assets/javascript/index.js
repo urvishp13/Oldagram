@@ -2,18 +2,21 @@ import { posts } from "./posts.js"
 
 let main = document.getElementsByTagName("main")[0]
 const postLayout = document.getElementById("post-layout")
-const postEl = document.getElementsByClassName("post")[0]
 
-console.log(postEl)
+// grab the sections from the DOM
+const postEl = document.getElementsByClassName("post")[0]
+const postDetails = document.getElementsByClassName("post-details")[0]
 
 const posterInfo = document.getElementsByClassName("poster-info")[0]
 
+// write the posts to the DOM
 for (const obj of posts) {
 
     const { name, username, location, avatar, post, comment, likes } = obj
 
     getPosterInfo(name, avatar, location)
     getPost(post, name)
+    getPostDetails(likes, username, comment)
 
     main.innerHTML += postLayout.outerHTML
 }
@@ -43,4 +46,14 @@ function getPost(post, name) {
                          class="post"
                          >
                     `
+}
+
+function getPostDetails(likes, username, comment) {
+    const likesEl = postDetails.querySelector(".likes")
+    const usernameEl = postDetails.querySelector(".username")
+    const commentEL = postDetails.querySelector(".comment .text")
+
+    likesEl.textContent = `${likes} likes`
+    usernameEl.textContent = username
+    commentEL.textContent = comment
 }
