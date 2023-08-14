@@ -34,8 +34,8 @@ function getPosterInfo(name, avatar, location) {
                 `
 
     avatarEl.innerHTML = html
-    nameEl.textContent = `${name}`
-    locationEl.textContent = `${location}`
+    nameEl.textContent = name
+    locationEl.textContent = location
 }
 
 function getPost(post, name) {
