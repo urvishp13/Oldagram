@@ -9,7 +9,7 @@ const postEl = postLayout.getElementsByClassName("post")[0]
 const postDetails = postLayout.getElementsByClassName("post-details")[0]
 
 let html = ""
-// write the posts to the DOM
+// gather HTML to write the posts to the DOM
 for (const obj of posts) {
 
     const { name, username, location, avatar, post, comment, likes } = obj
@@ -21,6 +21,7 @@ for (const obj of posts) {
     html += postLayout.outerHTML
 }
 
+// write the posts' HTML to the DOM
 main.innerHTML = html
 
 function getPosterInfo(name, avatar, location) {
