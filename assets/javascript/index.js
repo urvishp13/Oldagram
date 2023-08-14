@@ -1,7 +1,7 @@
 import { posts } from "./posts.js"
 
 let main = document.getElementsByTagName("main")[0]
-const postLayout = document.getElementById("post-layout")
+const postLayout = document.getElementsByClassName("post-layout")[0]
 
 // grab the sections from the DOM
 const postEl = document.getElementsByClassName("post")[0]

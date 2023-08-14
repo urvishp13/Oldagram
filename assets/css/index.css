@@ -19,6 +19,11 @@ body {
     font-family: "SourceSansPro";
 }
 
+/* ----------- POST LAYOUT ------------ */
+.post-layout:not(:last-child) {
+    border-bottom: 30px solid lightgray;
+}
+
 /* -------------- HEADER -------------- */
 header {
     justify-content: space-between;
