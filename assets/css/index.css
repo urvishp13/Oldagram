@@ -83,8 +83,19 @@ header {
 }
 
 .icon:hover {
-    background-color: rgb(1, 194, 194);
     cursor: pointer;
+}
+
+.like:hover {
+    filter: drop-shadow(0 0 .1rem rgb(255, 0, 0));
+}
+
+.comment:hover {
+    filter: drop-shadow(0 0 .1rem rgb(0, 157, 255));
+}
+
+.dm:hover {
+    filter: drop-shadow(0 0 .1rem rgb(255, 255, 0));
 }
 
 /* ----------- POST DETAILS ----------- */
