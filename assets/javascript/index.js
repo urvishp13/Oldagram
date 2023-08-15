@@ -1,12 +1,12 @@
 import { posts } from "./posts.js"
 
-let main = document.getElementsByTagName("main")[0]
-const postLayout = document.getElementsByClassName("post-layout")[0]
+let main = document.querySelector("main")
+const postLayout = document.querySelector(".post-layout")
 
 // grab the sections from the DOM
-const posterInfo = postLayout.getElementsByClassName("poster-info")[0]
-const postEl = postLayout.getElementsByClassName("post")[0]
-const postDetails = postLayout.getElementsByClassName("post-details")[0]
+const posterInfo = postLayout.querySelector(".poster-info")
+const postEl = postLayout.querySelector(".post")
+const postDetails = postLayout.querySelector(".post-details")
 
 let html = ""
 // gather HTML to write the posts to the DOM
@@ -41,10 +41,12 @@ postLayouts.forEach(layout => {
     })
 })
 
+/* --------------------- FUNCTIONS --------------------------- */
+
 function getPosterInfo(name, avatar, location) {
-    const avatarEl = posterInfo.getElementsByClassName("avatar")[0]
-    const nameEl = posterInfo.getElementsByClassName("poster-name")[0]
-    const locationEl = posterInfo.getElementsByClassName("poster-location")[0]
+    const avatarEl = posterInfo.querySelector(".avatar")
+    const nameEl = posterInfo.querySelector(".poster-name")
+    const locationEl = posterInfo.querySelector(".poster-location")
 
     const html = `
                 <img 
