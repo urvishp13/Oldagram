@@ -17,6 +17,13 @@ html, body {
 
 body {
     font-family: "SourceSansPro";
+    max-width: 23.4375em;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+main {
 }
 
 /* ----------- POST LAYOUT ------------ */
