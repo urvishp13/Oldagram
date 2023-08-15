@@ -24,6 +24,23 @@ for (const obj of posts) {
 // write the posts' HTML to the DOM
 main.innerHTML = html
 
+// grab all the post layouts after they've been added to the DOM, and...
+const postLayouts = document.querySelectorAll(".post-layout")
+
+// for each post layout
+postLayouts.forEach(layout => {
+    // add an event listener to the post that increases the number of
+    // likes by 1 when it is double clicked
+    layout.querySelector(".post-img").addEventListener("dblclick", function() {
+        // grab the likes element
+        const likes = layout.querySelector(".likes")
+        // get the current number of likes for the post
+        const numOfLikes = Number(likes.textContent.split(" ")[0])
+        // add 1 to the number of likes to account for the double-click
+        likes.textContent = `${numOfLikes + 1} likes`
+    })
+})
+
 function getPosterInfo(name, avatar, location) {
     const avatarEl = posterInfo.getElementsByClassName("avatar")[0]
     const nameEl = posterInfo.getElementsByClassName("poster-name")[0]
@@ -46,7 +63,7 @@ function getPost(post, name) {
                     <img 
                          src="assets/${post}" 
                          alt="self-portrait of ${name}" 
-                         class="post"
+                         class="post-img"
                          >
                     `
 }
