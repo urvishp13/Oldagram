@@ -86,15 +86,15 @@ header {
     cursor: pointer;
 }
 
-.like:hover {
+.like-icon:hover {
     filter: drop-shadow(0 0 .1rem rgb(255, 0, 0));
 }
 
-.comment:hover {
+.comment-icon:hover {
     filter: drop-shadow(0 0 .1rem rgb(0, 157, 255));
 }
 
-.dm:hover {
+.dm-icon:hover {
     filter: drop-shadow(0 0 .1rem rgb(255, 255, 0));
 }
 
